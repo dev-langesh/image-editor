@@ -102,6 +102,9 @@
     width: 250px;
     height: 200px;
   }
+  .container {
+    width: 100%;
+  }
 }
 
 /* @media screen and  (max-width : ) {
