@@ -42,6 +42,14 @@
   cursor: pointer;
 }
 
+.info {
+  padding-top: 12px;
+  display: inline-block;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
 .flipBtn {
   padding: 5px;
   background-color: white;
