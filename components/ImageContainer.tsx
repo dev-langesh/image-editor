@@ -18,8 +18,8 @@ export default function ImageContainer() {
             y2="0.924"
             gradientUnits="objectBoundingBox"
           >
-            <stop offset="0" stop-color="#c2c2c2" />
-            <stop offset="1" stop-color="#9f9f9f" />
+            <stop offset="0" stopColor="#c2c2c2" />
+            <stop offset="1" stopColor="#9f9f9f" />
           </linearGradient>
         </defs>
         <g
@@ -57,9 +57,9 @@ export default function ImageContainer() {
                   height="61.709"
                   rx="4.596"
                   stroke="#fff"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="5.398"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="5.398"
                   fill="url(#linear-gradient)"
                 />
                 <g id="g875" transform="translate(6.344 5.617)">
@@ -70,9 +70,9 @@ export default function ImageContainer() {
                     transform="translate(0)"
                     fill="#ccc"
                     stroke="#fff"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2.257"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2.257"
                   />
                   <rect
                     id="rect3342"
@@ -81,9 +81,9 @@ export default function ImageContainer() {
                     transform="translate(0)"
                     fill="#fff"
                     stroke="#fff"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2.257"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2.257"
                   />
                   <path
                     id="path3344"
@@ -91,10 +91,10 @@ export default function ImageContainer() {
                     transform="translate(2.756 5.512)"
                     fill="#ccc"
                     stroke="#fff"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2.257"
-                    fill-rule="evenodd"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2.257"
+                    fillRule="evenodd"
                   />
                   <path
                     id="path3390-0"
@@ -102,10 +102,10 @@ export default function ImageContainer() {
                     transform="translate(11.851 5.512)"
                     fill="#b3b3b3"
                     stroke="#fff"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2.257"
-                    fill-rule="evenodd"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2.257"
+                    fillRule="evenodd"
                   />
                   <path
                     id="path3358"
@@ -113,10 +113,10 @@ export default function ImageContainer() {
                     transform="translate(13.781 8.269)"
                     fill="#ccc"
                     stroke="#fff"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2.257"
-                    fill-rule="evenodd"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2.257"
+                    fillRule="evenodd"
                   />
                   <path
                     id="path3386"
@@ -124,10 +124,10 @@ export default function ImageContainer() {
                     transform="translate(27.562 8.269)"
                     fill="#b3b3b3"
                     stroke="#fff"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2.257"
-                    fill-rule="evenodd"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2.257"
+                    fillRule="evenodd"
                   />
                   <path
                     id="path3370"
@@ -135,10 +135,10 @@ export default function ImageContainer() {
                     transform="translate(0 19.293)"
                     fill="#fff"
                     stroke="#fff"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2.257"
-                    fill-rule="evenodd"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2.257"
+                    fillRule="evenodd"
                   />
                 </g>
               </g>
@@ -148,8 +148,8 @@ export default function ImageContainer() {
             id="text1021"
             transform="translate(780 411.768)"
             fill="#bfbfbf"
-            font-size="16"
-            font-family="Poppins-Regular, Poppins"
+            fontSize="16"
+            fontFamily="Poppins-Regular, Poppins"
           >
             <tspan x="-85.488" y="0">
               Choose Image to Edit
