@@ -1,7 +1,8 @@
 import { Slider } from "@mui/material";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useAppDispatch, useAppSelector } from "../src/app/hooks";
 import {
+  applyFilter,
   changeFilterOption,
   selectFilterOptions,
 } from "../src/features/filters/filters";
@@ -11,10 +12,22 @@ import FilterButtons from "./FilterButtons";
 export default function Filters() {
   const filters = useAppSelector(selectFilterOptions);
   const dispatch = useAppDispatch();
+  const [value, setValue] = React.useState<
+    number | string | Array<number | string>
+  >(30);
 
-  function clickHandler(event: React.MouseEvent<HTMLElement>, name: string) {
-    dispatch(changeFilterOption(name));
-  }
+  useEffect(() => {
+    const currentFilter = filters.currentFilter;
+
+    const currentFilterOptionAndValue = filters.filterValues.filter(
+      (item) => item.name === currentFilter
+    );
+    setValue(currentFilterOptionAndValue[0].value);
+  }, [filters]);
+
+  const handleSliderChange = (event: Event, newValue: number | number[]) => {
+    dispatch(applyFilter({ name: filters.currentFilter, value: newValue }));
+  };
 
   return (
     <section className={styles.filters}>
@@ -23,11 +36,12 @@ export default function Filters() {
       <span className={styles.info}>{filters.currentFilter}</span>
 
       <Slider
-        sx={{ margin: "6px 0" }}
+        sx={{ margin: "5px 0" }}
         size="small"
-        defaultValue={50}
+        value={typeof value === "number" ? value : 0}
         aria-label="Small"
         valueLabelDisplay="auto"
+        onChange={handleSliderChange}
       />
     </section>
   );
