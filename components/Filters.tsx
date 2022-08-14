@@ -6,6 +6,7 @@ import {
   selectFilterOptions,
 } from "../src/features/filters/filters";
 import styles from "../styles/Home.module.css";
+import FilterButtons from "./FilterButtons";
 
 export default function Filters() {
   const filters = useAppSelector(selectFilterOptions);
@@ -18,33 +19,9 @@ export default function Filters() {
   return (
     <section className={styles.filters}>
       <h4>Filters</h4>
-      <div className={styles.filterBtnGroup}>
-        <button
-          className={styles.filterBtn}
-          onClick={(event) => clickHandler(event, "Brightness")}
-        >
-          Brightness
-        </button>
-        <button
-          className={styles.filterBtn}
-          onClick={(ev) => clickHandler(ev, "Saturation")}
-        >
-          Saturation
-        </button>
-        <button
-          className={styles.filterBtn}
-          onClick={(ev) => clickHandler(ev, "Inversion")}
-        >
-          Inversion
-        </button>
-        <button
-          className={styles.filterBtn}
-          onClick={(ev) => clickHandler(ev, "Grayscale")}
-        >
-          Grayscale
-        </button>
-      </div>
+      <FilterButtons />
       <span className={styles.info}>{filters.currentFilter}</span>
+
       <Slider
         sx={{ margin: "6px 0" }}
         size="small"
