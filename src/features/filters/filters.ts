@@ -5,6 +5,9 @@ import type { RootState } from "../../app/store";
 interface filterState {
   filters: {
     currentFilter: string;
+    rotateRight: boolean;
+    rotateLeft: boolean;
+    flip: boolean;
     filterValues: {
       name: string;
       value: number;
@@ -16,6 +19,9 @@ interface filterState {
 const initialState: filterState = {
   filters: {
     currentFilter: "Brightness",
+    rotateRight: false,
+    rotateLeft: false,
+    flip: false,
     filterValues: [
       {
         name: "Brightness",
@@ -53,10 +59,33 @@ export const filterSlice = createSlice({
         }
       });
     },
+
+    rotateLeft: (state) => {
+      state.filters.rotateLeft = true;
+    },
+
+    rotateRight: (state) => {
+      state.filters.rotateRight = true;
+    },
+
+    flip: (state) => {
+      state.filters.flip = true;
+    },
+
+    reset: (state) => {
+      state.filters = initialState.filters;
+    },
   },
 });
 
-export const { changeFilterOption, applyFilter } = filterSlice.actions;
+export const {
+  changeFilterOption,
+  applyFilter,
+  rotateLeft,
+  rotateRight,
+  flip,
+  reset,
+} = filterSlice.actions;
 
 // Other code such as selectors can use the imported `RootState` type
 export const selectFilterOptions = (state: RootState) => state.filters.filters;

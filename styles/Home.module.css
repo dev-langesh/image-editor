@@ -65,6 +65,7 @@
 
 .flipBtn:hover {
   color: rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(0, 0, 0, 0.4);
   cursor: pointer;
 }
 

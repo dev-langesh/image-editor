@@ -13,9 +13,11 @@ export default function FilterButtons() {
 
   return (
     <div className={styles.filterBtnGroup}>
-      {["Brightness", "Saturation", "Inversion", "Grayscale"].map((name) => (
-        <FilterButton name={name} clickHandler={clickHandler} />
-      ))}
+      {["Brightness", "Saturation", "Inversion", "Grayscale"].map(
+        (name, index) => (
+          <FilterButton key={index} name={name} clickHandler={clickHandler} />
+        )
+      )}
     </div>
   );
 }
