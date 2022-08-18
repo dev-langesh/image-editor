@@ -67,3 +67,7 @@
     margin-left: 0;
   }
 }
+
+.inputImage {
+  display: none;
+}
